@@ -46,15 +46,19 @@ const App = () => {
 
   const containerStyle = {
     minHeight: "100vh",
-    background: isDarkMode ? darkGradient : lightGradient,
+    // background: isDarkMode ? darkGradient : lightGradient,
+    background:  "url('https://www.treehugger.com/thmb/FDT4RYkxU-lUwBAM9HvquJXeVAo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2019__07__shutterstock_113278297-247408febef145a5a6f04eeff17e85f4.jpg')",
+    backgroundsize: "cover",
     display: "flex",
+    backgroundPosition: "center",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     padding: "20px",
     transition: "all 0.5s ease-in-out",
     fontFamily: "'Inter', 'Segoe UI', 'Roboto', sans-serif",
-    position: "relative"
+    position: "relative",
+    overflow: "hidden"
   };
 
   const toggleButtonStyle = {
@@ -79,24 +83,24 @@ const App = () => {
   };
 
   const cardStyle = {
-    background: isDarkMode ? "rgba(18, 18, 24, 0.85)" : "rgba(255, 255, 255, 0.85)",
-    backdropFilter: "blur(20px)",
+    // background: isDarkMode ? "rgba(18, 18, 24, 0.85)" : "rgba(255, 255, 255, 0.85)",
+    background: "transparent",
     borderRadius: "20px",
     padding: "3.5rem 2.5rem",
     maxWidth: "680px",
     width: "90%",
-    boxShadow: isDarkMode
-      ? "0 25px 50px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.05)"
-      : "0 25px 50px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.8)",
+    // boxShadow: isDarkMode
+    //   ? "0 25px 50px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.05)"
+    //   : "0 25px 50px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.8)",
     textAlign: "center",
     transition: "all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
     opacity: isAnimating ? 0 : 1,
     transform: isAnimating ? "scale(0.95) translateY(10px)" : "scale(1) translateY(0)",
-    border: isDarkMode ? "1px solid rgba(255,255,255,0.1)" : "1px solid rgba(255,255,255,0.3)"
+    // border: isDarkMode ? "1px solid rgba(255,255,255,0.1)" : "1px solid rgba(255,255,255,0.3)"
   };
 
   const titleStyle = {
-    color: isDarkMode ? "#ffffff" : "#2d3436",
+    color: isDarkMode ? "#c43737ff" : "#c40f0fff",
     fontSize: "2.8rem",
     fontWeight: "700",
     marginBottom: "3rem",
@@ -104,7 +108,7 @@ const App = () => {
       ? "linear-gradient(135deg, #74b9ff, #a29bfe)"
       : "linear-gradient(135deg, #0984e3, #6c5ce7)",
     WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
+    // WebkitTextFillColor: "transparent",
     backgroundClip: "text",
     letterSpacing: "-0.5px"
   };
