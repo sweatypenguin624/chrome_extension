@@ -135,9 +135,9 @@ const App = () => {
 
   const newQuoteButtonStyle = {
     background: isDarkMode
-      ? "linear-gradient(135deg, #c9ced2ff, #d3d2dcff)"
-      : "linear-gradient(135deg, #ecdbdbff, #dededeff)",
-    color: "white",
+      ? "linear-gradient(135deg, #e6edf5ff, #e2e1e9ff)"
+      : "linear-gradient(135deg, #eceaf1ff, #f1eff2ff)",
+    color: "black",
     border: "none",
     padding: "16px 40px",
     borderRadius: "12px",
