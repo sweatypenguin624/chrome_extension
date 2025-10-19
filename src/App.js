@@ -100,7 +100,7 @@ const App = () => {
   };
 
   const titleStyle = {
-    color: isDarkMode ? "#c43737ff" : "#c40f0fff",
+    color: isDarkMode ? "#d0cdcdff" : "#eee8e8ff",
     fontSize: "2.8rem",
     fontWeight: "700",
     marginBottom: "3rem",
@@ -114,7 +114,7 @@ const App = () => {
   };
 
   const quoteStyle = {
-    color: isDarkMode ? "#e0e0e0" : "#2d3436",
+    color: isDarkMode ? "#e0e0e0" : "#e0e7e9ff",
     fontSize: "1.6rem",
     lineHeight: "1.7",
     fontStyle: "italic",
@@ -125,7 +125,7 @@ const App = () => {
   };
 
   const authorStyle = {
-    color: isDarkMode ? "#b2bec3" : "#636e72",
+    color: isDarkMode ? "#b2bec3" : "#f2f8fbff",
     fontSize: "1.3rem",
     fontWeight: "500",
     marginBottom: "3rem",
@@ -135,9 +135,9 @@ const App = () => {
 
   const newQuoteButtonStyle = {
     background: isDarkMode
-      ? "linear-gradient(135deg, #74b9ff, #a29bfe)"
-      : "linear-gradient(135deg, #0984e3, #6c5ce7)",
-    color: "white",
+      ? "linear-gradient(135deg, #e6edf5ff, #e2e1e9ff)"
+      : "linear-gradient(135deg, #eceaf1ff, #f1eff2ff)",
+    color: "black",
     border: "none",
     padding: "16px 40px",
     borderRadius: "12px",
